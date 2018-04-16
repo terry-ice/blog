@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>study-canvas</title>
+</head>
+<body>
+  <canvas id="name" width="1000" height="1000">  </canvas>
+  <script type="text/javascript">
+    const name = document.querySelector('#name')
+    const cxt = name.getContext('2d')
+    cxt.beginPath()
+    cxt.moveTo(0, 0)
+    cxt.lineTo(100, 200)
+    cxt.lineTo(200, 100)
+    cxt.lineTo(0, 0)
+    cxt.fillStyle = '#f6ca29'
+    cxt.fill()
+    // console.log(cxt)
+      </script>
+</body>
+</html>
