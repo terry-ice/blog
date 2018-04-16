@@ -44,6 +44,7 @@ context.fillStyle = "#ff0000"; context.fillRect(10, 10, 50, 50);
 context.fillStyle = "rgba(0,0,255,0.5)"; context.fillRect(30, 30, 50, 50);
 }
 ```
+
 ### 标签详解
 * beginPath() 表示要开始 绘制新路径
 * moveTo(x, y):将绘图游标移动到(x,y)，不画线。
