@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>检测画布上的鼠标位置</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
+<body>
+  <canvas id='myCanvas'></canvas>
+  <script>
+    const canvas = document.querySelector('#myCanvas')
+    const ctx = canvas.getContext('2d')
+    ctx.font = '16px Arial'
+    canvas.addEventListener('mousemove', e => {
+      const cRect = canvas.getBoundingClientRect()
+      const canvasX = Math.round(e.clientX - cRect.left)
+      const canvasY = Math.round(e.clientY - cRect.top)
+      ctx.clearRect(0, 0, canvas.width, canvas.height)
+      ctx.fillText(`X坐标:${canvasX},Y坐标:${canvasY}`, 10, 20)
+    })
+  </script>
+</body>
+
+</html>

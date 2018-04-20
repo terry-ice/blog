@@ -1,0 +1,13 @@
+*.class
+*.svn
+.idea
+*.exe
+*.exe~
+target
+vendor
+*.jar
+*.war
+*.ear
+.DS_Store
+*.iml
+#pkg
