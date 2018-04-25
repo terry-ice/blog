@@ -10,4 +10,5 @@
 
 id | 名称 | 笔记内容 | 状态
 --- | --- | --- | ---
-1 | 开始使用javascript | [开始使用javascript](https://github.com/terry-ice/blog/tree/master/javascript/1.%E5%BC%80%E5%A7%8B%E4%BD%BF%E7%94%A8javascript) | 已完成
+1 | use console | [使用console](https://github.com/terry-ice/blog/blob/master/javascript/1.%E5%BC%80%E5%A7%8B%E4%BD%BF%E7%94%A8javascript/1.1%E4%BD%BF%E7%94%A8console.log().md) | 已完成
+2 | use DOM API | [使用DOM API](https://github.com/terry-ice/blog/tree/master/javascript/1.%E5%BC%80%E5%A7%8B%E4%BD%BF%E7%94%A8javascript) | 已完成
