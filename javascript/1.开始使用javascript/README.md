@@ -15,3 +15,4 @@ id | 名称 | 笔记内容 | 状态
 3 | use alert() | [使用alert()](https://github.com/terry-ice/blog/tree/master/javascript/1.%E5%BC%80%E5%A7%8B%E4%BD%BF%E7%94%A8javascript/1.3Using-window.alert().md) | 已完成
 4 | use prompt()| [使用prompt()](https://github.com/terry-ice/blog/tree/master/javascript/1.%E5%BC%80%E5%A7%8B%E4%BD%BF%E7%94%A8javascript/1.4Using-window.prompt().md) | 已完成
 5 | use confirm() | [使用confirm()](https://github.com/terry-ice/blog/tree/master/javascript/1.%E5%BC%80%E5%A7%8B%E4%BD%BF%E7%94%A8javascript/1.5Using-window.confirm().md) | 已完成
+ | Using-the-DOM-API (with graphical text: Canvas, SVG, or image file) | [使用Canvas,svg](https://github.com/terry-ice/blog/tree/master/javascript/1.%E5%BC%80%E5%A7%8B%E4%BD%BF%E7%94%A8javascript/1.6Using-the-DOM-API (with graphical text: Canvas, SVG, or image file).md) | 已完成

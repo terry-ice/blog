@@ -1,0 +1,100 @@
+Chapter 1: Getting started with JavaScript 
+     1.1: Using console.log() 
+     1.2: Using the DOM API 
+     1.3: Using window.alert() 
+     1.4: Using window.prompt() 
+     1.5: Using window.confirm() 
+     1.6: Using the DOM API (with graphical text: Canvas, SVG, or image file) 
+Chapter 2: JavaScript Variables 
+     2.1: Defining a Variable 
+     2.2: Using a Variable 
+     2.3: Types of Variables 
+     2.4: Arrays and Objects 
+Chapter 3: Built-in Constants 
+     3.1: null 
+     3.2: Testing for NaN using isNaN() 
+     3.3: NaN 
+     3.4: undefined and null 
+     3.5: Infinity and -Infinity 
+     3.6: Number constants 
+     3.7: Operations that return NaN 
+Chapter 4: Datatypes in Javascript 
+     4.1: typeof 
+     4.2: Finding an object's class 
+     4.3: Getting object type by constructor name 
+Chapter 5: Bitwise operators
+     5.1: Bitwise operators 
+     5.2: Shift Operators
+Chapter 6: Arithmetic (Math) 
+     6.1: Constants 
+     6.2: Remainder / Modulus (%) 
+     6.3: Rounding 
+     6.4: Trigonometry 
+     6.5: Bitwise operators 
+     6.6: Incrementing (++) 
+     6.7: Exponentiation (Math.pow() or **) 
+     6.8: Random Integers and Floats 
+     6.9: Addition (+) 
+     6.10: Little / Big endian for typed arrays when using bitwise operators  
+     6.11: Get Random Between Two Numbers 
+     6.12: Simulating events with dierent probabilities 
+     6.13: Subtraction (-) 
+     6.14: Multiplication (*) 
+     6.15: Getting maximum and minimum 
+     6.16: Restrict Number to Min/Max Range
+     6.17: Ceiling and Floor
+     6.18: Getting roots of a number 
+     6.19: Random with gaussian distribution 
+     6.20: Math.atan2 to find direction 
+     6.21: Sin & Cos to create a vector given direction & distance 
+     6.22: Math.hypot 
+     6.23: Periodic functions using Math.sin 
+     6.24: Division (/) 
+     6.25: Decrementing (--) 
+Chapter 7: Strings 
+     7.1: Basic Info and String Concatenation 
+     7.2: Reverse String 
+     7.3: Comparing Strings Lexicographically 
+     7.4: Access character at index in string 
+     7.5: Escaping quotes 
+     7.6: Word Counter 
+     7.7: Trim whitespace 
+     7.8: Splitting a string into an array 
+     7.9: Strings are unicode 
+     7.10: Detecting a string 
+     7.11: Substrings with slice 
+     7.12: Character code 
+     7.13: String Representations of Numbers 
+     7.14: String Find and Replace Functions 
+     7.15: Find the index of a substring inside a string 
+     7.16: String to Upper Case 
+     7.17: String to Lower Case 
+     7.18: Repeat a String 
+Chapter 8: Date 
+     8.1: Create a new Date object 
+     8.2: Convert to a string format
+     8.3: Creating a Date from UTC 
+     8.4: Formatting a JavaScript date 
+     8.5: Get the number of milliseconds elapsed since 1 January 1970 00:00:00 UTC 
+     8.6: Get the current time and date 
+     8.7: Increment a Date Object 
+     8.8: Convert to JSON 
+Chapter 9: Date Comparison 
+     9.1: Comparing Date values 
+     9.2: Date Dierence Calculation 
+Chapter 10: Comparison Operations 
+     10.1: Abstract equality / inequality and type conversion 
+     10.2: NaN Property of the Global Object 
+     10.3: Short-circuiting in boolean operators
+     10.4: Null and Undefined 
+     10.5: Abstract Equality (==)
+     10.6: Logic Operators with Booleans 
+     10.7: Automatic Type Conversions 
+     10.8: Logic Operators with Non-boolean values (boolean coercion) 
+     10.9: Empty Array 
+     10.10: Equality comparison operations 
+     10.11: Relational operators (<, <=, >, >=) 
+     10.12: Inequality 
+     10.13: List of Comparison Operators 
+     10.14: Grouping multiple logic statements 
+     10.15: Bit fields to optimise comparison of multi state data 

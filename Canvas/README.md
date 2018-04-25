@@ -39,9 +39,11 @@ var drawing = document.getElementById("drawing");
 //确定浏览器支持<canvas>元素 if (drawing.getContext){
     var context = drawing.getContext("2d");
 //绘制红色矩形
-context.fillStyle = "#ff0000"; context.fillRect(10, 10, 50, 50);
+context.fillStyle = "#ff0000"; 
+context.fillRect(10, 10, 50, 50);
 //绘制半透明的蓝色矩形
-context.fillStyle = "rgba(0,0,255,0.5)"; context.fillRect(30, 30, 50, 50);
+context.fillStyle = "rgba(0,0,255,0.5)";
+ context.fillRect(30, 30, 50, 50);
 }
 ```
 
