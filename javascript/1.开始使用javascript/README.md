@@ -10,8 +10,8 @@
 
 id | 名称 | 笔记内容 | 状态
 --- | --- | --- | ---
-1 | use console | [使用console](https://github.com/terry-ice/blog/blob/master/javascript/1.1Using-console.log().md) | 已完成
-2 | use DOM API | [使用DOM API](https://github.com/terry-ice/blog/tree/master/javascript/1.2Using-DOM-API.md) | 已完成
-3 | use alert() | [使用alert()](https://github.com/terry-ice/blog/tree/master/javascript/1.3Using-window.alert().md) | 已完成
-4 | use prompt()| [使用prompt()](https://github.com/terry-ice/blog/tree/master/javascript/1.4Using-window.prompt().md) | 已完成
-5 | use confirm() | [使用confirm()](https://github.com/terry-ice/blog/tree/master/javascript/1.5Using-window.confirm().md) | 已完成
+1 | use console | [使用console](https://github.com/terry-ice/blog/blob/master/javascript/1.%E5%BC%80%E5%A7%8B%E4%BD%BF%E7%94%A8javascript/1.1Using-console.log().md) | 已完成
+2 | use DOM API | [使用DOM API](https://github.com/terry-ice/blog/tree/master/javascript/1.%E5%BC%80%E5%A7%8B%E4%BD%BF%E7%94%A8javascript/1.2Using-DOM-API.md) | 已完成
+3 | use alert() | [使用alert()](https://github.com/terry-ice/blog/tree/master/javascript/1.%E5%BC%80%E5%A7%8B%E4%BD%BF%E7%94%A8javascript/1.3Using-window.alert().md) | 已完成
+4 | use prompt()| [使用prompt()](https://github.com/terry-ice/blog/tree/master/javascript/1.%E5%BC%80%E5%A7%8B%E4%BD%BF%E7%94%A8javascript/1.4Using-window.prompt().md) | 已完成
+5 | use confirm() | [使用confirm()](https://github.com/terry-ice/blog/tree/master/javascript/1.%E5%BC%80%E5%A7%8B%E4%BD%BF%E7%94%A8javascript/1.5Using-window.confirm().md) | 已完成
