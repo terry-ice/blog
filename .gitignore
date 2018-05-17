@@ -8,6 +8,7 @@ vendor
 *.jar
 *.war
 *.ear
+demo.js
 .DS_Store
 *.iml
 #pkg
