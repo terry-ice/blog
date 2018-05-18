@@ -1,66 +1,34 @@
-## 使用 Canvas 绘图
-相关内容
-* 理解<canvas>元素
-* 绘制简单的 2D 图形
-## 基本用法
-### 标签
-首先要是使用<canvas>，需要先设置绘图画布的大小。之后可在不标签中设置浏览器不支持的提示信息。
-```html
-<canvas id="drawing" width=" 200" height="200">您的浏览器不支持，请给更新您的浏览器版本！</canvas>
-```
-### 绘图上下文对象
-想要画布上画图，必须取得绘图上下文对象引用，通过getContext()方法传入字符串“2d”
-```js
- var drawing = document.getElementById("drawing");
-//确定浏览器支持<canvas>元素
- if (drawing.getContext){
-   var context = drawing.getContext("2d"); //更多代码
- }else{
-   alert("您的浏览器不支持，请给更新您的浏览器版本！");
- }
-```
-### 导出绘制的图像
-使用 toDataURL()方法，可以导出在<canvas>元素上绘制的图像。这个方法接受一个参数，即图 像的 MIME 类型格式，而且适合用于创建图像的任何上下文。
-```js
+## Chapter 1: Getting started with HTML5 Canvas(开始使用HTML5 Canvas)
+* 检测画布上的鼠标位置
+* 画布大小和分辨率
+* 旋转
+* 将画布保存为图像文件
+* 如何将Html5 Canvas元素添加到网页
+* Html5画布功能和用途的索引
+* 屏幕画布
+* Hello World
 
-var drawing = document.getElementById("drawing");
-//确定浏览器支持<canvas>元素 if (drawing.getContext){
-//取得图像的数据 URI
-var imgURI = drawing.toDataURL("image/png");
-//显示图像
-var image = document.createElement("img"); image.src = imgURI; document.body.appendChild(image);
-}
-```
-### 形状
-#### 矩形
-与矩形有关的方法包括 fillRect()、 strokeRect()和 clearRect()。这三个方法都能接收 4 个参数:矩形的 x 坐标、矩形的 y 坐标、矩形 宽度和矩形高度。这些参数的单位都是像素。
-```js
-var drawing = document.getElementById("drawing");
-//确定浏览器支持<canvas>元素 if (drawing.getContext){
-    var context = drawing.getContext("2d");
-//绘制红色矩形
-context.fillStyle = "#ff0000"; 
-context.fillRect(10, 10, 50, 50);
-//绘制半透明的蓝色矩形
-context.fillStyle = "rgba(0,0,255,0.5)";
- context.fillRect(30, 30, 50, 50);
-}
-```
+## 代码分析
+### 检测画布上的鼠标位置
+此示例将显示如何获取鼠标相对于画布的位置，使得（0,0）将成为HTML5 Canvas的左上角。 e.clientX和e.clientY将获取鼠标相对于文档顶部的位置，将其更改为基于画布的顶部，我们从客户端X和Y中减去画布的左侧和右侧位置。
+[Math.round()]()的使用是为了确保x，y位置是整数，因为画布的边界矩形可能没有整数位置。
+* 获取canvas画布上下文，设置画布文字
+* 给画布添加鼠标经过事件
+* 执行getBoundingClientRect(),画布起始位置为（0.0）
+* 获取鼠标X和Y的位置通过Math.round()转为正数
+* 通过clearRect()清除画布上的矩形区域,之后输出到X和Y的值到坐标为(10,20)的区域显示
+### 相关扩展
+* [EventTarget.addEventListener()](https://developer.mozilla.org/zh-CN/docs/Web/API/EventTarget/addEventListener) 方法将指定的监听器注册到 EventTarget 上，当该对象触发指定的事件时，指定的回调函数就会被执行
+* [mouseover](https://developer.mozilla.org/zh-CN/docs/Web/Events/mouseover%E4%BA%8B%E4%BB%B6)当指针设备移动到存在监听器的元素或其子元素的时候，mouseover事件就会被触发。
+* [MouseEvent.clientX](https://developer.mozilla.org/zh-CN/docs/Web/API/MouseEvent/clientX) MouseEvent.clientX 是只读属性， 它提供事件发生时的应用客户端区域的水平坐标 (与页面坐标不同)。
+* [MouseEvent.clientY](https://developer.mozilla.org/zh-CN/docs/Web/API/MouseEvent/clientY)是只读属性， 它提供事件发生时的应用客户端区域的垂直坐标 (与页面坐标不同)。  
+* [Math.round()](https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Global_Objects/Math/round) 函数返回一个数字四舍五入后最接近的整数。
+* [Range.getBoundingClientRect(https://developer.mozilla.org/zh-CN/docs/Web/API/Range/getBoundingClientRect)]() 返回一个 ClientRect 对象，该对象限定了选定的文档对象的内容，该方法返回了一个矩形，这个矩形包围了该文档对象中所有元素的边界矩形集合
+* [clearRect()](https://developer.mozilla.org/zh-CN/docs/Web/API/CanvasRenderingContext2D/clearRect)是 Canvas 2D API 设置指定矩形区域内（以 点 (x, y) 为起点，范围是(width, height) ）所有像素变成透明，并擦除之前绘制的所有内容的方法。
+* [fillText()](https://developer.mozilla.org/zh-CN/docs/Web/API/CanvasRenderingContext2D/fillText)是 Canvas 2D API 在 (x, y)位置填充文本的方法。如果选项的第四个参数提供了最大宽度，文本会进行缩放以适应最大宽度。
 
-### 标签详解
-* beginPath() 表示要开始 绘制新路径
-* moveTo(x, y):将绘图游标移动到(x,y)，不画线。
-* lineTo(x, y):从上一点开始绘制一条直线，到(x,y)为止。
-* lineWidth 描边线条的宽度
-* strokeStyle 线条的颜色，默认为”#000000”，其值可以设置为CSS颜色值、渐变对象或者模式对象。
-* fillStyle 填充的颜色，默认为”#000000”，与strokeStyle一样，值也可以设置为CSS颜色值、渐变对象或者模式对象。
-* stroke() 用于按照已有的路径绘制线条。
-* fill()用于使用当前的填充风格来填充路径的区域。
-* clip() 用于按照已有的路线在画布中设置剪辑区域。调用clip()方法之后，图形绘制代码只对剪辑区域有效而不再影响区域外的画布。如调用之前没有描绘路径（即默认状态下），则得到的剪辑区域为整个Canvas区域。
-* lineCap 线条的端点样式，有butt（无）、round（圆头）、square（方头）三种类型可供选择，默认为butt。
-* lineJoin 线条的转折处样式，有round（圆角）、bevel（平角）、miter（尖角）三种；类型可供选择，默认为miter。
-* rect(x, y, width, height):从点(x,y)开始绘制一个矩形，宽度和高度分别由 width 和height 指定。这个方法绘制的是矩形路径，而不是 strokeRect()和 fillRect()所绘制的独立的形状。
-* arcTo(x1, y1, x2, y2, radius):从上一点开始绘制一条弧线，到(x2,y2)为止，并且以 给定的半径 radius 穿过(x1,y1)。
-* quadraticCurveTo(cx, cy, x, y):从上一点开始绘制一条二次曲线，到(x,y)为止，并且以(cx,cy)作为控制点。
-* miterLimit 线条尖角折角的锐利程序，默认为10。
-* clearRect()方法用于清除画布上的矩形区域
+
+
+
+
+

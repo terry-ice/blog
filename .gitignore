@@ -9,6 +9,7 @@ vendor
 *.war
 *.ear
 demo.js
+demo.html
 .DS_Store
 *.iml
 #pkg
