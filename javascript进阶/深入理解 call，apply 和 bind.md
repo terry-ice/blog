@@ -187,6 +187,7 @@ test(1,2,3,4);
 var arr = [2,3,1,5,4];
  
 Math.max.apply(null,arr); // 5
-```js
+```
 以上便是 call 和 apply 比较经典的几个应用场景，熟练掌握这些技巧，并把这些特性应用到你的实际项目中，会使你的代码看起来更加耐人寻味！
-[原创发布 @一像素  博客园 2016.01](https://www.cnblogs.com/onepixel/p/5143863.html) 
+
+[原文出处] @一像素  博客园 2016.01](https://www.cnblogs.com/onepixel/p/5143863.html) 
